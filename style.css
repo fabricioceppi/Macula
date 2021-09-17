@@ -1,0 +1,727 @@
+/* Mácula.uy .content stylesheet - By Fabricio Ceppi */
+
+/* General */
+
+* {
+  font-family: 'Work Sans', 'Helvética', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  padding: 0 16px 16px 16px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html, body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+@media (hover: hover) {
+a:hover {
+  color: lightgray;
+  transition: color 0.5s;
+}
+}
+
+li {
+  list-style-type: none;
+}
+
+.small {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.medium {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+p.medium {
+  padding-bottom: 16px;
+}
+
+
+.big {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  background-color: whitesmoke;
+  z-index: 10;
+}
+
+header>div:first-child {
+  width: 33.33%;
+  float: left;
+}
+
+header img {
+  height: 64px;
+}
+
+header > ul {
+  width: 25%;
+  float: left;
+  padding-top: 7px;
+}
+
+#menu-button {
+  height: 24px;
+  width: 24px;
+  background-color: black;
+  border-radius: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* menu modal mobile */
+
+nav {
+  background: black;
+  z-index: 12;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  padding: 16px;
+  width: 100vw;
+  height: 100vh;
+  transition: transform 1.2s cubic-bezier(.93,0,.19,.99);
+}
+
+nav a,
+nav li,
+nav p {
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+nav ul {
+  float: left;
+}
+
+#close-menu {
+  float: right;
+  transform: rotate(45deg);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.opened {
+  transform: translateY(-100%);
+}
+
+/* aside */
+aside {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  padding-top: 72px;
+}
+
+aside > p {
+  width: 70%;
+}
+
+/* main */
+
+main {
+  width: 100%;
+  padding-top: 96px;
+}
+
+.content {
+  width: 66.66%;
+  float: left;
+}
+
+.content > section {
+  padding-top: 72px;
+}
+
+/* Interviews */
+
+.interview {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.interview>img:first-child {
+  width: 100%;
+}
+
+.play {
+  height: 48px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.interview:hover > .play {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.interview-caption {
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.interview-caption h3 {
+  padding-bottom: 3px;
+}
+
+.interview-caption > div {
+  width: 66.66%;
+  float: left;
+}
+
+.details {
+  font-size: 15px;
+  color: grey;
+}
+
+.details a {
+  color: grey;
+}
+
+@media (hover: hover) {
+.details a:hover {
+  color: lightgray;
+}
+}
+
+.video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    display: none;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* texts */
+
+.articles {
+  width: 100%;
+}
+
+.articles li {
+  display: inline-block;
+}
+
+.articles > div {
+  width: 33.33%;
+  float: left;
+}
+
+.articles img {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.articles > div:first-child {
+  padding-right: 10px;
+}
+
+.articles > div:nth-child(2) {
+  padding: 0 5px;
+}
+
+.articles > div:last-child {
+  padding-left: 10px;
+}
+
+/* footer */
+
+footer {
+  clear: left;
+  padding-top: 48px;
+  padding-left: 33.33%;
+  font-size: 12px;
+}
+
+footer p:first-child {
+  padding-bottom: 16px;
+}
+
+/* reading paragraphs */
+
+.reading > p {
+  width: 66.66%;
+  padding-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* artists list */
+
+.artista {
+  position: relative;
+  z-index: 1;
+}
+
+.artista > div {
+  width: 37.4%;
+  padding-bottom: 24px;
+}
+
+.artista > img {
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 37%;
+  display: none;
+}
+
+.artista:hover > img {
+  display: block;
+}
+
+/* texts page */
+
+.item-texto {
+  position: relative;
+  margin-bottom: 24px;
+  border-bottom: 1px solid grey;
+}
+
+.item-texto > h2, .item-texto > h3 {
+  width: 66.66%;
+  padding-bottom: 8px;
+}
+
+.grey {
+  color: grey;
+}
+
+.item-texto > p {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+}
+
+/* individual text header */
+
+.text-head {
+  padding-right: 32px;
+}
+
+.text-head > img {
+  width: 100%;
+}
+
+.text-head > h1,
+.text-head > h2,
+.text-head > ul {
+  padding-bottom: 16px;
+}
+
+.text-head li {
+  display: inline-block;
+}
+
+/* individual artist page */
+
+.artist-page-head {
+  padding-right: 32px;
+}
+
+.artist-page-head > p {
+  padding-bottom: 16px;
+  max-width: 700px;
+}
+
+/* artists works gallery */
+
+.gallery-item {
+  width: 50%;
+  padding-top: 24px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+@media (hover: hover) {
+  .gallery-item:hover {
+    opacity: 0.5;
+  }
+}
+
+.gallery-item > img {
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+/* work's modal */
+
+.works-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  z-index: 20;
+  display: none;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+
+.works-modal > img {
+  max-height: 100%;
+  max-width: 90%;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen {
+  .works-modal {
+    display: block;
+  }
+}
+
+.works-modal.active {
+  top: 0;
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.controls > img {
+  height: 32px;
+  cursor: pointer;
+}
+
+.controls > img:first-child {
+  float: left;
+}
+
+.controls > img:last-child {
+  float: right;
+}
+
+#close-gallery {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-weight: 400;
+  color: white;
+  transform: rotate(45deg);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* responsive adjustments */
+
+@media only screen and (max-width: 1100px) {
+  aside {
+    width: 100%;
+    float: none;
+  }
+
+  .hide-at-breakpoint {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    float: none;
+  }
+
+  footer {
+    padding-left: 0;
+  }
+
+  .artista > div {
+    width: 33.33%;
+  }
+
+  .artista > img {
+    left: 33.33%;
+  }
+
+  .text-head {
+    padding-right: 0;
+  }
+
+  .text-head {
+    width: 66.66%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu, .interview-caption .details {
+    display: none;
+  }
+
+  .interview-caption > div {
+    width: 100%;
+    float: none;
+  }
+
+  body {
+    padding: 0 8px 8px 8px;
+  }
+
+  header {
+    padding: 8px;
+  }
+
+  .articles > div:first-child {
+    padding-right: 6px;
+  }
+
+  .articles > div:nth-child(2) {
+    padding: 0 3px;
+  }
+
+  .articles > div:last-child {
+    padding-left: 6px;
+  }
+
+  header img {
+    height: 48px;
+  }
+
+  .content > section {
+    padding-top: 48px;
+  }
+
+  .play {
+    height: 32px;
+    opacity: 1;
+  }
+
+  .small {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+
+  .medium {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .big {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .interview-caption {
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+  .articles img {
+    padding: 8px 0 4px 0;
+  }
+
+  #menu-button {
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .details {
+    font-size: 12px;
+  }
+
+  .reading > p {
+    width: 75%;
+    padding-bottom: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .text-head {
+    width: 75%;
+  }
+
+  .text-head > h1,
+  .text-head > h2,
+  .text-head > ul {
+    width: 80%;
+  }
+
+  .artist-page-head > p {
+    padding-bottom: 8px;
+    max-width: 550px;
+  }
+
+  .gallery-item {
+    width: 66.66%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .medium {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .big {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .articles > div {
+    width: 100%;
+    float: none;
+  }
+
+  .articles > div:first-child {
+    padding-right: 0px;
+  }
+
+  .articles > div:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 32px;
+  }
+
+  .articles > div:last-child {
+    padding-left: 0px;
+    padding-top: 32px;
+  }
+
+  main {
+    padding-top: 72px;
+  }
+
+  footer {
+    font-size: 8px;
+    padding-top: 32px;
+  }
+
+  footer p:first-child {
+    padding-bottom: 8px;
+  }
+
+  header img {
+    height: 40px;
+  }
+
+  .content > section {
+    padding-top: 32px;
+  }
+
+  .reading > p {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .artista > div {
+    width: 50%;
+  }
+
+  .artista > img {
+    left: 50%;
+  }
+
+  .text-head {
+    width: 100%;
+  }
+
+  .text-head > h1,
+  .text-head > h2,
+  .text-head > ul {
+    padding-bottom: 8px;
+  }
+
+  .artist-page-head {
+    padding-right: 0;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text-head > h1,
+  .text-head > h2,
+  .text-head > ul {
+    width: 100%;
+  }
+
+  .play {
+    height: 24px;
+  }
+}
