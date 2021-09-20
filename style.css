@@ -307,6 +307,42 @@ footer p:first-child {
   line-height: 22px;
 }
 
+.reading > p > a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.reading > h2 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.reading img {
+  width: 50%;
+}
+
+.reading .details {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.reading em {
+  font-weight: 400;
+}
+
+.reading-foot {
+  width: 50%;
+  margin-left: 64px;
+  padding-top: 48px;
+  padding-bottom: 80px;
+  font-weight: 400;
+}
+
+.reading-foot > p {
+  padding-bottom: 24px;
+}
+
 /* artists list */
 
 .artista {
@@ -383,6 +419,10 @@ footer p:first-child {
 .artist-page-head > p {
   padding-bottom: 16px;
   max-width: 700px;
+}
+
+.artist-page-head > h1{
+  padding-bottom: 24px;
 }
 
 /* artists works gallery */
@@ -711,6 +751,16 @@ footer p:first-child {
 
   .gallery-item {
     width: 100%;
+  }
+
+  .reading img {
+    width: 100%;
+  }
+
+  .reading-foot {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
