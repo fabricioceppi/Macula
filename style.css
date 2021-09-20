@@ -122,9 +122,10 @@ nav {
   background: black;
   z-index: 12;
   position: fixed;
-  top: 100%;
+  top: 120%;
   left: 0;
   padding: 16px;
+  padding-top: 10%;
   width: 100vw;
   height: 100vh;
   transition: transform 1.2s cubic-bezier(.93,0,.19,.99);
@@ -150,7 +151,7 @@ nav ul {
 }
 
 .opened {
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 
 /* aside */
