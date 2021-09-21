@@ -20,11 +20,15 @@ const closeMenu = document.getElementById('close-menu');
 const menuModal = document.querySelector('nav');
 
 menuButton.addEventListener('click', function() {
+  menuModal.style.opacity = '1';
   menuModal.classList.add('opened');
 });
 
 closeMenu.addEventListener('click', function() {
   menuModal.classList.remove('opened');
+  setTimeout(() => {
+    menuModal.style.opacity = '0';
+  }, 1200);
 });
 
 // works modal check
@@ -69,26 +73,19 @@ prev.addEventListener('click', function() {
 });
 
 
-
-
-
 gallery.appendChild(image);
 
 closeGallery.addEventListener('click', function() {
   gallery.classList.remove('active');
 });
 
+// Mobile relative height problems fix
 
-// borrador
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-/*
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
-crear una matriz con todas las imagenes de la pagina
-
-agregar a cada elemento de la matriz un evento de click que active el menuModal
-
-setear la src de la imagen dentro del modal para que iguale la src de la imagen clickeada
-
-agregar a los botones una funcion que al hacer click mueva la posicion dentro de la matriz y reajuste el src de la imagen modal
-
-*/
