@@ -129,7 +129,7 @@ nav {
   top: 100%;
   left: 0;
   padding: 16px;
-  transition: transform 1.2s cubic-bezier(.93,0,.19,.99);
+  transition: top 1.2s cubic-bezier(.93,0,.19,.99);
 }
 
 nav a,
@@ -152,7 +152,7 @@ nav ul {
 }
 
 .opened {
-  transform: translateY(-100%);
+  top: 0;
 }
 
 /* aside */
