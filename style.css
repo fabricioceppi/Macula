@@ -3,7 +3,7 @@
 /* General */
 
 * {
-  font-family: 'Work Sans', 'Helvética', sans-serif;
+  font-family: "Work Sans", "Helvética", sans-serif;
   font-weight: 500;
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +24,8 @@ body {
   scrollbar-width: none;
 }
 
-html, body {
+html,
+body {
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -38,14 +39,19 @@ a {
 }
 
 @media (hover: hover) {
-a:hover {
-  color: lightgray;
-  transition: color 0.5s;
-}
+  a:hover {
+    color: lightgray;
+    transition: color 0.5s;
+  }
 }
 
 li {
   list-style-type: none;
+}
+
+cite,
+q {
+  font-weight: inherit;
 }
 
 .small {
@@ -62,13 +68,14 @@ p.medium {
   padding-bottom: 16px;
 }
 
-
 .big {
   font-size: 30px;
   line-height: 30px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
@@ -92,7 +99,7 @@ header {
   z-index: 10;
 }
 
-header>div:first-child {
+header > div:first-child {
   width: 33.33%;
   float: left;
 }
@@ -129,7 +136,7 @@ nav {
   top: 100%;
   left: 0;
   padding: 16px;
-  transition: top 1.2s cubic-bezier(.93,0,.19,.99);
+  transition: top 1.2s cubic-bezier(0.93, 0, 0.19, 0.99);
 }
 
 nav a,
@@ -191,7 +198,7 @@ main {
   cursor: pointer;
 }
 
-.interview>img:first-child {
+.interview > img:first-child {
   width: 100%;
 }
 
@@ -235,17 +242,17 @@ main {
 }
 
 @media (hover: hover) {
-.details a:hover {
-  color: lightgray;
-}
+  .details a:hover {
+    color: lightgray;
+  }
 }
 
 .video {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    display: none;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  display: none;
 }
 
 .video iframe {
@@ -337,7 +344,6 @@ footer p:first-child {
   width: 50%;
   margin-left: 64px;
   padding-top: 56px;
-  padding-bottom: 80px;
   font-weight: 400;
 }
 
@@ -355,6 +361,7 @@ article.reading {
   height: 0;
   border: none;
   border-bottom: 1px solid grey;
+  padding-bottom: 80px;
 }
 
 /* artists list */
@@ -377,8 +384,10 @@ article.reading {
   display: none;
 }
 
-.artista:hover > img {
+@media (hover: hover) {
+  .artista:hover > img {
   display: block;
+  }
 }
 
 /* texts page */
@@ -389,7 +398,8 @@ article.reading {
   border-bottom: 1px solid grey;
 }
 
-.item-texto > h2, .item-texto > h3 {
+.item-texto > h2,
+.item-texto > h3 {
   width: 66.66%;
   padding-bottom: 8px;
 }
@@ -435,7 +445,7 @@ article.reading {
   max-width: 700px;
 }
 
-.artist-page-head > h1{
+.artist-page-head > h1 {
   padding-bottom: 24px;
 }
 
@@ -568,7 +578,8 @@ article.reading {
 }
 
 @media only screen and (max-width: 800px) {
-  .menu, .interview-caption .details {
+  .menu,
+  .interview-caption .details {
     display: none;
   }
 
