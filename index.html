@@ -1,197 +1,309 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mácula - Plataforma de pintura contemporánea</title>
+    <meta
+      name="description"
+      content="Mácula es una plataforma cultural de pintura contemporánea uruguaya en diálogo con el mundo. Es un espacio de difusión artística que atiende la unión intrínseca entre visualidad y pensamiento."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fabricio Ceppi" />
+    <meta
+      name="keywords"
+      content="Pintura, Uruguay, Pintura uruguaya, arte contemporáneo"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="./thumbs/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R3SE45NV9Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="utf-8">
-  <title>Mácula - Plataforma de pintura contemporánea</title>
-  <meta name="description" content="Mácula es una plataforma cultural de pintura contemporánea uruguaya en diálogo con el mundo. Es un espacio de difusión artística que atiende la unión intrínseca entre visualidad y pensamiento.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Fabricio Ceppi">
-  <meta name="keywords" content="Pintura, Uruguay, Pintura uruguaya, arte contemporáneo">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="./thumbs/favicon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-</head>
+      gtag("config", "G-R3SE45NV9Z");
+    </script>
+  </head>
 
-<body>
-  <header class="clearfix">
-    <div>
-      <a href="./index.html"><img src="./thumbs/logo.svg" alt="Logo oficial de Mácula"></a>
-    </div>
-    <ul class="menu">
-      <li><a class="medium" href="about.html">Sobre Mácula</a></li>
-      <li><a class="medium" href="artistas.html">Artistas</a></li>
-      <li><a class="medium" href="textos.html">Textos</a></li>
-    </ul>
-    <ul class="menu">
-      <li><a class="medium" href="https://www.instagram.com/MACULA_UY/">Instagram</a></li>
-      <li><a class="medium" href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ">Youtube</a></li>
-      <li><a class="medium" href='mailto:contacto@maucla.uy'>Contacto</a></li>
-    </ul>
-    <div id='menu-button'>
-    </div>
-  </header>
+  <body>
+    <header class="clearfix">
+      <div>
+        <a href="./index.html"
+          ><img src="./thumbs/logo.svg" alt="Logo oficial de Mácula"
+        /></a>
+      </div>
+      <ul class="menu">
+        <li><a class="medium" href="about.html">Sobre Mácula</a></li>
+        <li><a class="medium" href="artistas.html">Artistas</a></li>
+        <li><a class="medium" href="textos.html">Textos</a></li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a class="medium" href="https://www.instagram.com/MACULA_UY/"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            class="medium"
+            href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ"
+            >Youtube</a
+          >
+        </li>
+        <li><a class="medium" href="mailto:contacto@maucla.uy">Contacto</a></li>
+      </ul>
+      <div id="menu-button"></div>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="about.html">Sobre Mácula</a></li>
-      <li><a href="artistas.html">Artistas</a></li>
-      <li><a href="textos.html">Textos</a></li>
-      <li><a href="https://www.instagram.com/MACULA_UY/">Instagram</a></li>
-      <li><a href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ">Youtube</a></li>
-      <li><a href='mailto:contacto@maucla.uy'>Contacto</a></li>
-    </ul>
-    <p id='close-menu'>+</p>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="about.html">Sobre Mácula</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="textos.html">Textos</a></li>
+        <li><a href="https://www.instagram.com/MACULA_UY/">Instagram</a></li>
+        <li>
+          <a href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ"
+            >Youtube</a
+          >
+        </li>
+        <li><a href="mailto:contacto@maucla.uy">Contacto</a></li>
+      </ul>
+      <p id="close-menu">+</p>
+    </nav>
 
-  <main class='clearfix'>
+    <main class="clearfix">
+      <aside class="hide-at-breakpoint">
+        <p class="medium">
+          Mácula es una plataforma cultural de pintura contemporánea uruguaya en
+          diálogo con el mundo. Es un espacio de difusión artística que atiende
+          la unión intrínseca entre visualidad y pensamiento.
+        </p>
+        <p class="medium">
+          Compartimos el trabajo y la reflexión de artistas, ahondando en lo
+          específico de cada autor y su proceso de creación, exponiendo las
+          diferentes expresiones de la pintura contemporánea en Uruguay y
+          alrededores.
+        </p>
+      </aside>
 
-    <aside class='hide-at-breakpoint'>
-      <p class="medium">
-        Mácula es una plataforma cultural de pintura contemporánea uruguaya en
-        diálogo con el mundo. Es un espacio de difusión artística que atiende la
-        unión intrínseca entre visualidad y pensamiento.
+      <div class="content">
+        <section>
+          <div class="interview" id="displayer1">
+            <img
+              srcset="
+                img/tisnes-480.png  480w,
+                img/tisnes-800.png  800w,
+                img/tisnes.png     1400w
+              "
+              sizes="(min-width: 1000px) 66vw,
+                     96vw"
+              src="./img\tisnes.png"
+              alt="El artista uruguayo Martín Tisnés durante la entrevista en su taller"
+            />
+            <img
+              class="play"
+              src="./thumbs/play.svg"
+              alt="Play button, click to play the interview"
+            />
+          </div>
+          <div id="video1" class="video">
+            <iframe
+              src="https://www.youtube.com/embed/198ypVrIvG8?&autoplay=0&mute=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="interview-caption clearfix">
+            <div>
+              <h3 class="big">Los estratos de la imagen</h3>
+              <h2 class="medium">
+                Entrevista a <a href="./artists/tisnes.html">Martín Tisnés</a>
+              </h2>
+            </div>
+            <ul class="details">
+              <li>Maldonado</li>
+              <li>08.2020</li>
+              <li>18:50 min</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="articles clearfix">
+            <div>
+              <h2 class="medium">
+                <a href="./articles/ellugardelrecuerdo.html"
+                  >EL LUGAR DEL RECUERDO: SOBRE LA PINTURA DE AMALIA NIETO
+                  (1907-2003)</a
+                >
+              </h2>
+              <a href="./articles/ellugardelrecuerdo.html"
+                ><img
+                  src="./img/nieto2.jpg"
+                  alt="Pintura. Bodegón con utensilios varios en una paleta baja de ocre, gris y terracota"
+              /></a>
+              <h3 class="medium">Francisco Álvez Francese</h3>
+              <ul class="details">
+                <li>pintura,</li>
+                <li>critica,</li>
+                <li>pintura nacional</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="medium">
+                <a href="./articles/dosimagenesintimas.html"
+                  >DOS IMÁGENES ÍNTIMAS</a
+                >
+              </h2>
+              <a href="./articles/dosimagenesintimas.html"
+                ><img
+                  src="./img/maquia-ceciliavidal.png"
+                  alt="Fotografía. Una maraña de ramas y vegetación atrapan la poca luz que se cuela a través del bosque/monte"
+              /></a>
+              <h3 class="medium">Cecilia Vidal</h3>
+              <ul class="details">
+                <li>Teoría,</li>
+                <li>estética,</li>
+                <li>artes visuales</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="medium">
+                <a href="./articles/dispositivofisher1.html"
+                  >DISPOSITIVO FISHER #1<br />EL EXTRAÑO CASO DE MR. CEPPI Y MR.
+                  FIELITZ</a
+                >
+              </h2>
+              <a href="./articles/dispositivofisher1.html"
+                ><img
+                  src="./img/juanfielitzmanospreview.png"
+                  alt="Collage. Una 'mancha' negra de geometría irregular ocupa la mayor parte del plano. Dos manos se asoman por la parte superior"
+              /></a>
+              <h3 class="medium">Claudio Burguez</h3>
+              <ul class="details">
+                <li>Teoría,</li>
+                <li>estética,</li>
+                <li>artes visuales</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="interview" id="displayer2">
+            <img
+              srcset="
+                img/de-souza-480.png  480w,
+                img/de-souza-800.png  800w,
+                img/de-souza.png     1400w
+              "
+              sizes="(min-width: 1000px) 66vw,
+                     96vw"
+              src="./img\de-souza.png"
+              alt="La artista Cecilia De Souza durante su entrevista para Mácula. Sentada en el patio de su casa, rodeada de vegetación"
+            />
+            <img
+              class="play"
+              src="./thumbs/play.svg"
+              alt="Play button, click to play the interview"
+            />
+          </div>
+          <div id="video2" class="video">
+            <iframe
+              src="https://www.youtube.com/embed/qPMphau0184?&autoplay=0&mute=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="interview-caption clearfix">
+            <div>
+              <h3 class="big">La fisura en la trama</h3>
+              <h2 class="medium">
+                Entrevista a <a href="artists/desouza.html">Cecilia De Souza</a>
+              </h2>
+            </div>
+            <ul class="details">
+              <li>Montevideo</li>
+              <li>04.2021</li>
+              <li>19:31 min</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <div class="interview" id="displayer3">
+            <img
+              srcset="
+                img/medina-480.png  480w,
+                img/medina-800.png  800w,
+                img/medina.png     1400w
+              "
+              sizes="(min-width: 1000px) 66vw,
+                     96vw"
+              src="./img\medina.png"
+              alt="El artista Marcos Medina en su taller. Al fondo puede verse una mesa con su material de trabajo"
+            />
+            <img
+              class="play"
+              src="./thumbs/play.svg"
+              alt="Play button, click to play the interview"
+            />
+          </div>
+          <div id="video3" class="video">
+            <iframe
+              src="https://www.youtube.com/embed/VE965os7i_o?&autoplay=0&mute=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="interview-caption clearfix">
+            <div>
+              <h3 class="big">El ojo eléctrico</h3>
+              <h2 class="medium">
+                Entrevista a <a href="artists/medina.html">Marcos Medina</a>
+              </h2>
+            </div>
+            <ul class="details">
+              <li>Montevideo</li>
+              <li>04.2021</li>
+              <li>20:22 min</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>MÁCULA 2021 ©</p>
+      <p>
+        Proyecto seleccionado por Fondos Concursables Para la Cultura, MEC.<br />
+        Con el apoyo de Centro Ignis, Universidad Católica del Uruguay.
       </p>
-      <p class="medium">
-        Compartimos el trabajo y la reflexión de artistas, ahondando en lo
-        específico de cada autor y su proceso de creación, exponiendo las
-        diferentes expresiones de la pintura contemporánea en Uruguay y alrededores.
-      </p>
-    </aside>
+    </footer>
 
-
-    <div class='content'>
-      <section>
-        <div class="interview" id='displayer1'>
-          <img srcset="img/tisnes-480.png 480w,
-                     img/tisnes-800.png 800w,
-                     img/tisnes.png 1400w" sizes="(min-width: 1000px) 66vw,
-                     96vw" src="./img\tisnes.png" alt="El artista uruguayo Martín Tisnés durante la entrevista en su taller">
-          <img class="play" src="./thumbs/play.svg" alt="Play button, click to play the interview">
-        </div>
-        <div id="video1" class="video">
-          <iframe src="https://www.youtube.com/embed/198ypVrIvG8?&autoplay=0&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="interview-caption clearfix">
-          <div>
-            <h3 class="big">Los estratos de la imagen</h3>
-            <h2 class="medium">Entrevista a <a href="./artists/tisnes.html">Martín Tisnés</a></h2>
-          </div>
-          <ul class="details">
-            <li>Maldonado</li>
-            <li>08.2020</li>
-            <li>18:50 min</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <div class='articles clearfix'>
-          <div>
-            <h2 class='medium'><a href='./articles/ellugardelrecuerdo.html'>EL LUGAR DEL RECUERDO: SOBRE LA PINTURA DE AMALIA NIETO (1907-2003)</a></h2>
-            <a href='./articles/ellugardelrecuerdo.html'><img src="./img/nieto2.jpg" alt="Pintura. Bodegón con utensilios varios en una paleta baja de ocre, gris y terracota"></a>
-            <h3 class='medium'>Francisco Álvez Francese</h3>
-            <ul class='details'>
-              <li>pintura,</li>
-              <li>critica,</li>
-              <li>pintura nacional</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 class='medium'><a href='./articles/dosimagenesintimas.html'>DOS IMÁGENES ÍNTIMAS</a></h2>
-            <a href="./articles/dosimagenesintimas.html"><img src="./img/maquia-ceciliavidal.png" alt="Fotografía. Una maraña de ramas y vegetación atrapan la poca luz que se cuela a través del bosque/monte"></a>
-            <h3 class='medium'>Cecilia Vidal</h3>
-            <ul class='details'>
-              <li>Teoría,</li>
-              <li>estética,</li>
-              <li>artes visuales</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 class='medium'><a href='./articles/dispositivofisher1.html'>DISPOSITIVO FISHER #1<br>EL EXTRAÑO CASO DE MR. CEPPI Y MR. FIELITZ</a></h2>
-            <a href="./articles/dispositivofisher1.html"><img src="./img/juanfielitzmanospreview.png" alt="Collage. Una 'mancha' negra de geometría irregular ocupa la mayor parte del plano. Dos manos se asoman por la parte superior"></a>
-            <h3 class='medium'>Claudio Burguez</h3>
-            <ul class='details'>
-              <li>Teoría,</li>
-              <li>estética,</li>
-              <li>artes visuales</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="interview" id='displayer2'>
-          <img srcset="img/de-souza-480.png 480w,
-                     img/de-souza-800.png 800w,
-                     img/de-souza.png 1400w" sizes="(min-width: 1000px) 66vw,
-                     96vw" src="./img\de-souza.png" alt="La artista Cecilia De Souza durante su entrevista para Mácula. Sentada en el patio de su casa, rodeada de vegetación">
-          <img class="play" src="./thumbs/play.svg" alt="Play button, click to play the interview">
-        </div>
-        <div id="video2" class="video">
-          <iframe src="https://www.youtube.com/embed/qPMphau0184?&autoplay=0&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="interview-caption clearfix">
-          <div>
-            <h3 class="big">La fisura en la trama</h3>
-            <h2 class="medium">Entrevista a <a href="artists/desouza.html">Cecilia De Souza</a></h2>
-          </div>
-          <ul class="details">
-            <li>Montevideo</li>
-            <li>04.2021</li>
-            <li>19:31 min</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <div class="interview" id='displayer3'>
-          <img srcset="img/medina-480.png 480w,
-                     img/medina-800.png 800w,
-                     img/medina.png 1400w" sizes="(min-width: 1000px) 66vw,
-                     96vw" src="./img\medina.png" alt="El artista Marcos Medina en su taller. Al fondo puede verse una mesa con su material de trabajo">
-          <img class="play" src="./thumbs/play.svg" alt="Play button, click to play the interview">
-        </div>
-        <div id="video3" class="video">
-          <iframe src="https://www.youtube.com/embed/VE965os7i_o?&autoplay=0&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="interview-caption clearfix">
-          <div>
-            <h3 class="big">El ojo eléctrico</h3>
-            <h2 class="medium">Entrevista a <a href="artists/medina.html">Marcos Medina</a></h2>
-          </div>
-          <ul class="details">
-            <li>Montevideo</li>
-            <li>04.2021</li>
-            <li>20:22 min</li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <p>
-      MÁCULA 2021 ©
-    </p>
-    <p>
-      Proyecto seleccionado por Fondos Concursables Para la Cultura, MEC.<br>
-      Con el apoyo de Centro Ignis, Universidad Católica del Uruguay.
-    </p>
-  </footer>
-
-  <script src='./main.js'></script>
-  <script type="text/javascript">
-    display('displayer1', 'video1');
-    display('displayer2', 'video2');
-    display('displayer3', 'video3');
-  </script>
-</body>
-
+    <script src="./main.js"></script>
+    <script type="text/javascript">
+      display("displayer1", "video1");
+      display("displayer2", "video2");
+      display("displayer3", "video3");
+    </script>
+  </body>
 </html>
