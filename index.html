@@ -98,6 +98,49 @@
 
       <div class="content">
         <section>
+          <div class="interview" id="displayer4">
+            <img
+              srcset="
+                img/nin-480.png  480w,
+                img/nin-800.png  800w,
+                img/nin.png     1400w
+              "
+              sizes="(min-width: 1000px) 66vw,
+                     96vw"
+              src="./img\nin.png"
+              alt="El artista uruguayo Matías Nin habla frente a una de sus obras más recientes"
+            />
+            <img
+              class="play"
+              src="./thumbs/play.svg"
+              alt="Play button, click to play the interview"
+            />
+          </div>
+          <div id="video4" class="video">
+            <iframe
+              src="https://www.youtube.com/embed/hMd9ffr7pl4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="interview-caption clearfix">
+            <div>
+              <h3 class="big">Impresión de lo real</h3>
+              <h2 class="medium">
+                Entrevista a <a href="./artists/nin.html">Matías Nin</a>
+              </h2>
+            </div>
+            <ul class="details">
+              <li>Montevideo</li>
+              <li>03.2021</li>
+              <li>19:28 min</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
           <div class="interview" id="displayer1">
             <img
               srcset="
@@ -304,6 +347,7 @@
       display("displayer1", "video1");
       display("displayer2", "video2");
       display("displayer3", "video3");
+      display("displayer4", "video4");
     </script>
   </body>
 </html>
