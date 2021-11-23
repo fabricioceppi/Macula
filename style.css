@@ -327,8 +327,17 @@ footer p:first-child {
   text-transform: uppercase;
 }
 
+.reading > .small {
+  font-size: 15px;
+  line-height: 18px;
+}
+
 .reading img {
   width: 50%;
+}
+
+.reading .expanded {
+  width: 70%;
 }
 
 .reading .details {
@@ -675,6 +684,12 @@ article.reading {
     width: 75%;
   }
 
+  .reading > .small {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+
   .text-head > h1,
   .text-head > h2,
   .text-head > ul {
@@ -760,6 +775,11 @@ article.reading {
     width: 100%;
   }
 
+  .reading > .small {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
   .artista > div {
     width: 50%;
   }
@@ -786,7 +806,8 @@ article.reading {
     width: 100%;
   }
 
-  .reading img {
+  .reading img,
+  .reading .expanded {
     width: 100%;
   }
 
