@@ -276,6 +276,10 @@ main {
   float: left;
 }
 
+.articles.two > div {
+  width: 50%;
+}
+
 .articles img {
   width: 100%;
   padding: 8px 0;
@@ -285,12 +289,24 @@ main {
   padding-right: 10px;
 }
 
+.articles.two > div:first-child {
+  padding-right: 8px;
+}
+
 .articles > div:nth-child(2) {
   padding: 0 5px;
 }
 
+.articles.two > div:nth-child(2) {
+  padding: 0;
+}
+
 .articles > div:last-child {
   padding-left: 10px;
+}
+
+.articles.two > div:last-child {
+  padding-left: 8px;
 }
 
 /* footer */
@@ -609,12 +625,24 @@ article.reading {
     padding-right: 6px;
   }
 
+  .articles.two > div:first-child {
+    padding-right: 5px;
+  }
+
   .articles > div:nth-child(2) {
     padding: 0 3px;
   }
 
+  .articles.two > div:nth-child(2) {
+    padding: 0;
+  }
+
   .articles > div:last-child {
     padding-left: 6px;
+  }
+
+  .articles.two > div:last-child {
+    padding-left: 5px;
   }
 
   header img {
@@ -727,17 +755,25 @@ article.reading {
     float: none;
   }
 
-  .articles > div:first-child {
+  .articles.two > div {
+    width: 100%;
+    float: none;
+  } 
+
+  .articles > div:first-child,
+  .articles.two > div:first-child {
     padding-right: 0px;
   }
 
-  .articles > div:nth-child(2) {
+  .articles > div:nth-child(2),
+  .articles.two > div:nth-child(2) {
     padding-left: 0;
     padding-right: 0;
     padding-top: 32px;
   }
 
-  .articles > div:last-child {
+  .articles > div:last-child, 
+  .articles.two > div:last-child {
     padding-left: 0px;
     padding-top: 32px;
   }
