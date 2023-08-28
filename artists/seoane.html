@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Andrés Seoane - Mácula - Plataforma de pintura contemporánea</title>
+    <meta name="description" content="Andrés Seoane, artista | Entrevista a Andrés Seoane | Artista Uruguayo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fabricio Ceppi" />
+    <meta name="keywords" content="Pintura, Uruguay, Pintura uruguaya, arte contemporáneo, Andrés Seoane, Entrevista, Mácula" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" type="image/png" href="../thumbs/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3SE45NV9Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-R3SE45NV9Z");
+    </script>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div>
+            <a href="../index.html"><img src="../thumbs/logo.svg" alt="Logo oficial de Mácula" /></a>
+        </div>
+        <ul class="menu">
+            <li><a class="medium" href="../about.html">Sobre Mácula</a></li>
+            <li><a class="medium" href="../artistas.html">Artistas</a></li>
+            <li><a class="medium" href="../textos.html">Textos</a></li>
+        </ul>
+        <ul class="menu">
+            <li>
+                <a class="medium" href="https://www.instagram.com/MACULA_UY/">Instagram</a>
+            </li>
+            <li>
+                <a class="medium" href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ">Youtube</a>
+            </li>
+            <li><a class="medium" href="mailto:contacto@maucla.uy">Contacto</a></li>
+        </ul>
+        <div id="menu-button"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../about.html">Sobre Mácula</a></li>
+            <li><a href="../artistas.html">Artistas</a></li>
+            <li><a href="../textos.html">Textos</a></li>
+            <li><a href="https://www.instagram.com/MACULA_UY/">Instagram</a></li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC-y6pahxJH0pHZgldN2SANQ">Youtube</a>
+            </li>
+            <li><a href="mailto:contacto@maucla.uy">Contacto</a></li>
+        </ul>
+        <p id="close-menu">+</p>
+    </nav>
+
+    <main class="clearfix">
+        <aside>
+            <div class="artist-page-head">
+                <h1 class="medium"><a href="seoane.html">Andrés Seoane</a></h1>
+                <!-- <p></p> -->
+            </div>
+        </aside>
+
+        <div class="content">
+
+            <section>
+                <div class="interview" id="displayer7">
+                    <img src="../img\seoane.png" alt="Andrés Seoane en su taller" />
+                    <img class="play" src="../thumbs/play.svg" alt="Play button, click to play the interview" />
+                </div>
+                <div id="video7" class="video">
+                    <iframe src="https://www.youtube.com/embed/ahC0eV2RsIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="interview-caption clearfix">
+                    <div>
+                        <h3 class="big">Todos los días del año</h3>
+                        <h2 class="medium">
+                            Entrevista a <a href="seoane.html">Andrés Seoane</a>
+                        </h2>
+                    </div>
+                    <ul class="details">
+                        <li>Montevideo</li>
+                        <li>19:41 min</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+
+                <h2 class="medium">Obra</h2>
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane01.png" alt="Pintura del artista Andrés Seoane" />
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane02.png" alt="Obra del artista Andrés Seoane" />
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane03.png" alt="Obra del artista Andrés Seoane" />
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane04.png" alt="Obra del artista Andrés Seoane" />
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane05.png" alt="Obra del artista Andrés Seoane" />
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./seoane-work/seoane06.png" alt="Obra del artista Andrés Seoane" />
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>MÁCULA 2021 ©</p>
+        <p>
+            Proyecto seleccionado por Fondos Concursables Para la Cultura, MEC.<br /> Con el apoyo de Centro Ignis, Universidad Católica del Uruguay.
+        </p>
+    </footer>
+
+    <div class="works-modal">
+        <p id="close-gallery">+</p>
+        <div class="controls">
+            <img id="previous" src="../thumbs/left.svg" alt="#" />
+            <img id="next" src="../thumbs/right.svg" alt="#" />
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script type="text/javascript">
+        display("displayer7", "video7");
+    </script>
+</body>
+
+</html>
